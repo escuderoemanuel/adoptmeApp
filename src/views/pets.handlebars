@@ -1,0 +1,29 @@
+<section class='pets'>
+  <h1>Pets</h1>
+  <div>
+    <nav>
+      <button>
+        <a href="../">
+          Home
+        </a>
+      </button>
+      <button>
+        <a href="/users">
+          Users
+        </a>
+      </button>
+    </nav>
+
+    {{#each pets}}
+    <div>
+      <p>Name: {{this.name}}</p>
+      <p>Specie: {{this.specie}}</p>
+      <p>Birth Date: {{this.birthDate}}</p>
+      <p>Adopted: {{this.adopted}}</p>
+      <p>Owner: {{this.owner}}</p>
+      <p> <img src={{this.image}} alt="Pet Picture"> </p>
+    </div>
+    <br>
+    <br>
+    {{/each}}
+</section>

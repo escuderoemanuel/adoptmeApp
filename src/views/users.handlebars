@@ -1,0 +1,27 @@
+<section class='users'>
+  <h1>Users</h1>
+
+  <div>
+    <nav>
+      <button>
+        <a href="../">
+          Home
+        </a>
+      </button>
+      <button>
+        <a href="/pets">
+          Pets
+        </a>
+      </button>
+    </nav>
+
+
+    {{#each users}}
+    <div>
+      <p>Name:{{this.first_name}}{{this.last_name}}</p>
+      <p>Email:{{this.email}}</p>
+      <p>Pets:{{this.pets}}</p>
+    </div>
+    {{/each}}
+
+</section>

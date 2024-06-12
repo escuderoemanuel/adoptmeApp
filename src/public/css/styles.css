@@ -1,0 +1,99 @@
+/* Css Reset june 2024 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p {
+  text-wrap: pretty;
+  font-size: .8em;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+img,
+video,
+svg {
+  height: auto;
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition: none;
+  }
+}
+
+.home,
+.pets,
+.users {
+  padding: 2rem;
+  text-align: center;
+  height: 100vh;
+}
+
+.home img {
+  width: 200px;
+  margin: 2.5rem 0;
+}
+
+button {
+  min-width: 100px;
+  padding: .5rem;
+  border-radius: 8px;
+  background-color: #0077ff;
+  border: 1px solid grey;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.pets img,
+.users img {
+  width: 100px;
+  margin: .5rem;
+  border-radius: 8px;
+}
